@@ -139,7 +139,7 @@ def test_adrv9009_dds_gain_check_agc(
 #########################################
 @pytest.mark.iio_hardware(hardware)
 @pytest.mark.parametrize("classname", [(classname)])
-@pytest.mark.parametrize("channel", [0, 1, 2, 3])
+@pytest.mark.parametrize("channel", [0, 1]) #, 2, 3])
 @pytest.mark.parametrize(
     "param_set, dds_scale, min_rssi, max_rssi",
     [
@@ -195,7 +195,7 @@ def test_adrv9009_dds_gain_check_vary_power(
 #########################################
 @pytest.mark.iio_hardware(hardware)
 @pytest.mark.parametrize("classname", [(classname)])
-@pytest.mark.parametrize("channel", [0, 1, 2, 3])
+@pytest.mark.parametrize("channel", [0, 1]) #, 2, 3])
 @pytest.mark.parametrize(
     "param_set",
     [
